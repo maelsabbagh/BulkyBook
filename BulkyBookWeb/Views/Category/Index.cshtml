@@ -21,6 +21,7 @@
             <th>Category Name</th>
             <th>Display Order</th>
             <th></th>
+            <th></th>
         </tr>
             
     </thead>
@@ -38,6 +39,11 @@
                 <td>
                     <div class="w-75 btn-group" role="group">
                         <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-primary">Edit</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger">Delete</a>
                     </div>
                 </td>
             </tr>
